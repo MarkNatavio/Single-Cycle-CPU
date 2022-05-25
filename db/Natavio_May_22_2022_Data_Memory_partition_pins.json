@@ -1,0 +1,301 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Natavio_May_22_2022_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_Out[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_rden",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_clk",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_wren",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Natavio_May_22_2022_data[31]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,28 @@
+Quartus Prime Archive log --	C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Data_Memory.qarlog
+
+Archive:	C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Data_Memory.qar
+Date:		Sun May 22 01:45:03 2022
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_32_bit_2_1_Mux.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_5_bits_2_1_Mux.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_ALU.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_CPU.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_CPU_Components.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_CPU_Controller.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Data_Memory.qpf
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Data_Memory.qsf
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Data_Memory.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_IR.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Instruction_Memory.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Logical_Bitwise_Op.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_PC.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_RF.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Sign_Ext.vhd
+C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_addsub_ZNO.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

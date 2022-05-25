@@ -1,0 +1,139 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY Natavio_May_22_2022_ALU IS
+	PORT (Natavio_May_22_2022_ALUCtrl	: IN std_logic_vector (3 DOWNTO 0);
+			Natavio_May_22_2022_Operand1	: IN std_logic_vector (31 DOWNTO 0);
+			Natavio_May_22_2022_Operand2	: IN std_logic_vector (31 DOWNTO 0);
+			Natavio_May_22_2022_upper_res	: OUT std_logic_vector (31 DOWNTO 0);
+			Natavio_May_22_2022_lower_res	: OUT std_logic_vector (31 DOWNTO 0);
+			Natavio_May_22_2022_Overflow	: OUT std_logic;
+			Natavio_May_22_2022_Zero		: OUT std_logic;
+			Natavio_May_22_2022_Negative	: OUT std_logic;
+			Natavio_May_22_2022_Cout		: OUT std_logic);
+END Natavio_May_22_2022_ALU;
+
+ARCHITECTURE arch OF Natavio_May_22_2022_ALU IS
+	SIGNAL Natavio_May_22_2022_O, Natavio_May_22_2022_OpSel	: std_logic;
+	SIGNAL Natavio_May_22_2022_res	: std_logic_vector (63 DOWNTO 0);
+	SIGNAL Natavio_May_22_2022_upper, Natavio_May_22_2022_lower, Natavio_May_22_2022_ext	: std_logic_vector (31 DOWNTO 0);
+	SIGNAL Natavio_May_22_2022_imm_0 : std_logic_vector (15 DOWNTO 0);
+	
+	-- All arithmetic flags
+	SIGNAL Natavio_May_22_2022_O0, Natavio_May_22_2022_Z0, Natavio_May_22_2022_N0,
+			 Natavio_May_22_2022_O1, Natavio_May_22_2022_Z1, Natavio_May_22_2022_N1,
+			 Natavio_May_22_2022_O2, Natavio_May_22_2022_Z2, Natavio_May_22_2022_N2,
+			 Natavio_May_22_2022_O3, Natavio_May_22_2022_Z3, Natavio_May_22_2022_N3,
+			 Natavio_May_22_2022_O4, Natavio_May_22_2022_Z4, Natavio_May_22_2022_N4,
+			 Natavio_May_22_2022_O5, Natavio_May_22_2022_Z5, Natavio_May_22_2022_N5,
+			 Natavio_May_22_2022_O6, Natavio_May_22_2022_Z6, Natavio_May_22_2022_N6	: std_logic := '0';
+	
+	-- All arithmetic carryouts
+	SIGNAL Natavio_May_22_2022_Cout0, Natavio_May_22_2022_Cout1, Natavio_May_22_2022_Cout2, Natavio_May_22_2022_Cout3,
+			 Natavio_May_22_2022_Cout4, Natavio_May_22_2022_Cout5, Natavio_May_22_2022_Cout6	: std_logic := '0';		 
+			
+	-- All Opertaion outputs
+	SIGNAL Natavio_May_22_2022_temp0, Natavio_May_22_2022_temp1, Natavio_May_22_2022_temp2, Natavio_May_22_2022_temp3
+			 Natavio_May_22_2022_temp4, Natavio_May_22_2022_temp5, Natavio_May_22_2022_temp6	: std_logic_vector (31 DOWNTO 0);
+			 
+	
+														-- Components
+		-- Sign Extension Unit
+	COMPONENT Natavio_May_22_2022_Sign_Ext
+		PORT (Natavio_May_22_2022_16_bits	: IN std_logic_vector (15 DOWNTO 0);
+				Natavio_May_22_2022_ExtOp		: IN std_logic;
+				Natavio_May_22_2022_32_bits	: OUT std_logic_vector (31 DOWNTO 0));
+	END COMPONENT;
+	
+	-- Logical Bitwise Operation Unit
+	COMPONENT Natavio_May_22_2022_Logical_Bitwise_Op
+		PORT (Natavio_May_22_2022_OP		: IN std_logic_Vector (3 DOWNTO 0);
+				Natavio_May_22_2022_A		: IN std_logic_Vector (31 DOWNTO 0);
+				Natavio_May_22_2022_B		: IN std_logic_Vector (31 DOWNTO 0);
+				Natavio_May_22_2022_Ext		: IN std_logic_Vector (31 DOWNTO 0);
+				Natavio_May_22_2022_Shamt	: IN std_logic_Vector (15 DOWNTO 0);
+				Natavio_May_22_2022_Res		: OUT std_logic_Vector (31 DOWNTO 0));
+	END COMPONENT;
+	
+	-- Add/Sub Unit W/ Zero, Negative, & Overflow Flags
+	component Natavio_May_22_2022_addsub_ZNO
+		GENERIC (Natavio_May_22_2022_N	:	integer := 32);
+		PORT (Natavio_May_22_2022_OP		:	IN std_logic;
+				Natavio_May_22_2022_A		:	IN std_logic_vector (Natavio_May_22_2022_N-1 DOWNTO 0);
+				Natavio_May_22_2022_B		:	IN std_logic_vector (Natavio_May_22_2022_N-1 DOWNTO 0);
+				Natavio_May_22_2022_Result	:	OUT std_logic_vector (Natavio_May_22_2022_N-1 DOWNTO 0);
+				Natavio_May_22_2022_COUT	:	OUT std_logic;
+				Natavio_May_22_2022_Overflow, Natavio_May_22_2022_Zero, Natavio_May_22_2022_Negative	:	OUT std_logic);
+	END COMPONENT;
+	
+	BEGIN
+		Natavio_May_22_2022_imm_0 <= Natavio_May_22_2022_Operand2(15 DOWNTO 0);
+		Natavio_May_22_2022_upper <= Natavio_May_22_2022_res(63 DOWNTO 32);
+		Natavio_May_22_2022_lower <= Natavio_May_22_2022_res(31 DOWNTO 0);
+		
+		-- Extension
+		Natavio_May_22_2022_extension : Natavio_May_22_2022_Sign_Ext PORT MAP (Natavio_May_22_2022_imm_0, '0',
+																									  Natavio_May_22_2022_ext);
+		-- Arithmetic Operations
+		Natavio_May_22_2022_add : Natavio_May_22_2022_addsub_ZNO GENERIC MAP (Natavio_May_22_2022_N => 32) -- add
+																					PORT MAP ('0', Natavio_May_22_2022_Operand1,
+																								 Natavio_May_22_2022_Operand2, Natavio_May_22_2022_temp0,
+																								 Natavio_May_22_2022_Cout0, Natavio_May_22_2022_O0,
+																								 Natavio_May_22_2022_Z0, Natavio_May_22_2022_N0);
+		Natavio_May_22_2022_addi : Natavio_May_22_2022_addsub_ZNO GENERIC MAP (Natavio_May_22_2022_N => 32) --addi
+																					PORT MAP ('0', Natavio_May_22_2022_Operand1,
+																								 Natavio_May_22_2022_ext, Natavio_May_22_2022_temp1,
+																								 Natavio_May_22_2022_Cout1, Natavio_May_22_2022_O1,
+																								 Natavio_May_22_2022_Z1, Natavio_May_22_2022_N1);
+		Natavio_May_22_2022_addi : Natavio_May_22_2022_addsub_ZNO GENERIC MAP (Natavio_May_22_2022_N => 32) --addiu
+																					PORT MAP ('0', Natavio_May_22_2022_Operand1,
+																								 Natavio_May_22_2022_ext, Natavio_May_22_2022_temp2,
+																								 Natavio_May_22_2022_Cout2, Natavio_May_22_2022_O2,
+																								 Natavio_May_22_2022_Z2, Natavio_May_22_2022_N2);
+		Natavio_May_22_2022_addi : Natavio_May_22_2022_addsub_ZNO GENERIC MAP (Natavio_May_22_2022_N => 32) --addu
+																					PORT MAP ('0', Natavio_May_22_2022_Operand1,
+																								 Natavio_May_22_2022_Operand2, Natavio_May_22_2022_temp3,
+																								 Natavio_May_22_2022_Cout3, Natavio_May_22_2022_O3,
+																								 Natavio_May_22_2022_Z3, Natavio_May_22_2022_N3);
+		Natavio_May_22_2022_addi : Natavio_May_22_2022_addsub_ZNO GENERIC MAP (Natavio_May_22_2022_N => 32) --sub
+																					PORT MAP ('1', Natavio_May_22_2022_Operand1,
+																								 Natavio_May_22_2022_Operand2, Natavio_May_22_2022_temp4,
+																								 Natavio_May_22_2022_Cout4, Natavio_May_22_2022_O4,
+																								 Natavio_May_22_2022_Z4, Natavio_May_22_2022_N4);
+		Natavio_May_22_2022_addi : Natavio_May_22_2022_addsub_ZNO GENERIC MAP (Natavio_May_22_2022_N => 32) --subu
+																					PORT MAP ('1', Natavio_May_22_2022_Operand1,
+																								 Natavio_May_22_2022_Operand2, Natavio_May_22_2022_temp5,
+																								 Natavio_May_22_2022_Cout5, Natavio_May_22_2022_O5,
+																								 Natavio_May_22_2022_Z5, Natavio_May_22_2022_N5);
+		
+		-- Logical Operations
+		Natavio_May_22_2022_bit_op	: Natavio_May_22_2022_Logical_Bitwise_Op PORT MAP (Natavio_May_22_2022_ALUCtrl, 
+																												Natavio_May_22_2022_Operand1,
+																												Natavio_May_22_2022_Operand2,
+																												Natavio_May_22_2022_ext,
+																												Natavio_May_22_2022_imm_0,
+																												Natavio_May_22_2022_temp6);
+		
+		PROCESS (Natavio_May_22_2022_ALUCtrl, Natavio_May_22_2022_upper, Natavio_May_22_2022_lower, Natavio_May_22_2022_temp0,
+					Natavio_May_22_2022_temp1, Natavio_May_22_2022_temp2, Natavio_May_22_2022_temp3, Natavio_May_22_2022_temp4,
+					Natavio_May_22_2022_temp5, Natavio_May_22_2022_temp6)
+			BEGIN
+				CASE Natavio_May_22_2022_ALUCtrl IS
+					WHEN "0000" =>
+						Natavio_May_22_2022_upper_res <= x"00000000";
+						Natavio_May_22_2022_lower <= Natavio_May_22_2022_temp0;
+						Natavio_May_22_2022_Overflow <= Natavio_May_22_2022_O0;
+						Natavio_May_22_2022_Zero <= Natavio_May_22_2022_Z0;
+						Natavio_May_22_2022_Negative <= Natavio_May_22_2022_N0;
+						Natavio_May_22_2022_Cout <= Natavio_May_22_2022_Cout0;
+						
+					WHEN "0001" =>
+					WHEN "0010" =>
+					WHEN "0011" =>
+					WHEN "0100" =>
+					WHEN "0101" =>
+					WHEN "0110" =>
+					WHEN "0111" =>
+		
+	
+END arch;

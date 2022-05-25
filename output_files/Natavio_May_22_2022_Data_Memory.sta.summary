@@ -1,0 +1,21 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Natavio_May_22_2022_clk'
+Slack : -0.724
+TNS   : -2280.977
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Natavio_May_22_2022_clk'
+Slack : -0.724
+TNS   : -2278.394
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Natavio_May_22_2022_clk'
+Slack : -0.091
+TNS   : -174.925
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Natavio_May_22_2022_clk'
+Slack : -0.091
+TNS   : -175.679
+
+------------------------------------------------------------

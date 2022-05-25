@@ -1,0 +1,77 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY Natavio_May_22_2022_CPU_Controller IS
+	PORT (Natavio_May_22_2022_OP			: in std_logic_vector (5 DOWNTO 0);
+			Natavio_May_22_2022_Funct		: in std_logic_vector (5 DOWNTO 0);
+			Natavio_May_22_2022_ExtOp		: out std_logic;
+			Natavio_May_22_2022_ALUCtrl	: out std_logic_vector (3 DOWNTO 0);
+			Natavio_May_22_2022_RegWr		: out std_logic;
+			Natavio_May_22_2022_RegDst		: out std_logic;
+			Natavio_May_22_2022_ALUSrc		: out std_logic;
+			Natavio_May_22_2022_MemToReg	: out std_logic;
+			Natavio_May_22_2022_MemWr		: out std_logic;
+			Natavio_May_22_2022_Branch		: out std_logic;
+			Natavio_May_22_2022_J			: out std_logic);
+END Natavio_May_22_2022_CPU_Controller;
+
+ARCHITECTURE arch OF Natavio_May_22_2022_CPU_Controller IS
+	SIGNAL Natavio_May_22_2022_ALU_OP	: std_logic_vector (3 DOWNTO 0);
+	
+	BEGIN
+		PROCESS(Natavio_May_22_2022_OP)
+			BEGIN
+				CASE Natavio_May_22_2022_OP IS
+					-- R-Type Instructions
+					WHEN "000000" => 
+						Natavio_May_22_2022_ALU_OP <="000";
+						Natavio_May_22_2022_ExtOp <= '0';
+						Natavio_May_22_2022_RegWr <= '1';
+						Natavio_May_22_2022_RegDst <= '1';
+						Natavio_May_22_2022_ALUSrc <= '0';
+						Natavio_May_22_2022_MemToReg <= '0';
+						Natavio_May_22_2022_MemWr <= '0';
+						Natavio_May_22_2022_Branch <= '0';
+						Natavio_May_22_2022_J <= '0';
+						
+					-- I-Type Instructions
+					WHEN "000100" => -- addi
+						Natavio_May_22_2022_ALU_OP <="001";
+						Natavio_May_22_2022_ExtOp <= '1';
+						Natavio_May_22_2022_RegWr <= '1';
+						Natavio_May_22_2022_RegDst <= '0';
+						Natavio_May_22_2022_ALUSrc <= '1';
+						Natavio_May_22_2022_MemToReg <= '0';
+						Natavio_May_22_2022_MemWr <= '0';
+						Natavio_May_22_2022_Branch <= '0';
+						Natavio_May_22_2022_J <= '0';
+					WHEN "000101" => -- addiu
+						Natavio_May_22_2022_ALU_OP <="001";
+						Natavio_May_22_2022_ExtOp <= '1';
+						Natavio_May_22_2022_RegWr <= '1';
+						Natavio_May_22_2022_RegDst <= '0';
+						Natavio_May_22_2022_ALUSrc <= '1';
+						Natavio_May_22_2022_MemToReg <= '0';
+						Natavio_May_22_2022_MemWr <= '0';
+						Natavio_May_22_2022_Branch <= '0';
+						Natavio_May_22_2022_J <= '0';
+					WHEN "000110" => -- andi
+						Natavio_May_22_2022_ALU_OP <="010";
+						Natavio_May_22_2022_ExtOp <= '0';
+						Natavio_May_22_2022_RegWr <= '0';
+						Natavio_May_22_2022_RegDst <= '0';
+						Natavio_May_22_2022_ALUSrc <= '0';
+						Natavio_May_22_2022_MemToReg <= '0';
+						Natavio_May_22_2022_MemWr <= '0';
+						Natavio_May_22_2022_Branch <= '0';
+						Natavio_May_22_2022_J <= '0';
+						
+				END CASE;
+						
+						
+		END PROCESS;
+		
+		PROCESS(Natavio_May_22_2022_ALU_OP, Natavio_May_22_2022_Func)
+			BEGIN
+		END PROCESS;
+END arch;

@@ -1,0 +1,93 @@
+Archive Project report for Natavio_May_22_2022_Data_Memory
+Sun May 22 01:45:04 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Sun May 22 01:45:04 2022 ;
+; Revision Name          ; Natavio_May_22_2022_Data_Memory       ;
+; Top-level Entity Name  ; Natavio_May_22_2022_Data_Memory       ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/Mark/Desktop/Labs/Final Lab/Natavio_Mark_May_22_2022_Single_Cycle_CPU_LITE/Natavio_May_22_2022_Data_Memory.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Natavio_May_22_2022_Data_Memory.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4829 megabytes
+    Info: Processing ended: Sun May 22 01:45:04 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
+; Natavio_May_22_2022_5_bits_2_1_Mux.vhd                       ;
+; Natavio_May_22_2022_32_bit_2_1_Mux.vhd                       ;
+; Natavio_May_22_2022_addsub_ZNO.vhd                           ;
+; Natavio_May_22_2022_ALU.vhd                                  ;
+; Natavio_May_22_2022_CPU.vhd                                  ;
+; Natavio_May_22_2022_CPU_Components.vhd                       ;
+; Natavio_May_22_2022_CPU_Controller.vhd                       ;
+; Natavio_May_22_2022_Data_Memory.qpf                          ;
+; Natavio_May_22_2022_Data_Memory.qsf                          ;
+; Natavio_May_22_2022_Data_Memory.vhd                          ;
+; Natavio_May_22_2022_Instruction_Memory.vhd                   ;
+; Natavio_May_22_2022_IR.vhd                                   ;
+; Natavio_May_22_2022_Logical_Bitwise_Op.vhd                   ;
+; Natavio_May_22_2022_PC.vhd                                   ;
+; Natavio_May_22_2022_RF.vhd                                   ;
+; Natavio_May_22_2022_Sign_Ext.vhd                             ;
++--------------------------------------------------------------+
+
+

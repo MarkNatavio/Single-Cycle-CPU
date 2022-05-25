@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+PACKAGE Natavio_May_22_2022_CPU_Components IS
+	COMPONENT Natavio_May_22_2022_Data_Memory IS
+		PORT(Natavio_May_22_2022_clk		: IN std_logic;
+			  Natavio_May_22_2022_wren		: IN std_logic;
+			  Natavio_May_22_2022_rden		: IN std_logic;
+			  Natavio_May_22_2022_data		: IN std_logic_vector (31 DOWNTO 0);
+			  Natavio_May_22_2022_address	: IN std_logic_Vector (31 DOWNTO 0);
+			  Natavio_May_22_2022_Out		: OUT std_logic_vector (31 DOWNTO 0));
+	END COMPONENT;
+	
+END Natavio_May_22_2022_CPU_Components;

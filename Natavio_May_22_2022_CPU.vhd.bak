@@ -1,0 +1,10 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+USE ieee.std_logic_unsigned.all;
+USE WORK.Natavio_May_22_2022_CPU_Components.all;
+
+ENTITY Natavio_May_22_2022_CPU IS
+	PORT (Natavio_May_22_2022_clk		: in STD_LOGIC;
+			Natavio_May_22_2022_Result	: OUT std_logic_vector (63 DOWNTO 0));
+END Natavio_May_22_2022_CPU;

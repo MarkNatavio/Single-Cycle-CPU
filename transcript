@@ -1,0 +1,2005 @@
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 21:02:39 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 21:06:43 on May 21,2022, Elapsed time: 0:04:04
+# Errors: 0, Warnings: 1
+vsim -gui work.natavio_may_22_2022_sign_ext
+# vsim -gui work.natavio_may_22_2022_sign_ext 
+# Start time: 21:06:54 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+add wave -position end  sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_16_bits
+add wave -position end  sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_ExtOp
+add wave -position end  sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_32_bits
+force -freeze sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_16_bits 0000000000000001 0
+force -freeze sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_ExtOp 0 0
+run
+# Break key hit
+quit -sim
+# End time: 21:08:07 on May 21,2022, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 1
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 21:08:23 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+restart
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext 00000000000000000000000000000001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+restart
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext 00000000000000000000000000000001 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_0 0000000000000001 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_alu/Natavio_May_22_2022_bit_op
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_0 0000000000000001 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+quit -sim
+# End time: 21:23:09 on May 21,2022, Elapsed time: 0:14:46
+# Errors: 0, Warnings: 1
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd failed with 4 errors.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 1 failed with 4 errors.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 21:24:43 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 21:28:09 on May 21,2022, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 3
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd failed with 1 errors.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 1 failed with 1 error.
+# Load canceled
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 21:28:51 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 21:31:16 on May 21,2022, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 3
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_cpu
+# vsim -gui work.natavio_may_22_2022_cpu 
+# Start time: 21:31:44 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.natavio_may_22_2022_cpu_components
+# Loading work.natavio_may_22_2022_cpu(arch)
+# Loading work.natavio_may_22_2022_pc(arch)
+# Loading work.natavio_may_22_2022_instruction_memory(arch)
+# Loading work.natavio_may_22_2022_ir(arch)
+# Loading work.natavio_may_22_2022_cpu_controller(arch)
+# Loading work.natavio_may_22_2022_5_bits_2_1_mux(arch)
+# Loading work.natavio_may_22_2022_rf(arch)
+# Loading work.natavio_may_22_2022_32_bit_2_1_mux(arch)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+# Loading work.natavio_may_22_2022_data_memory(arch)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_adder(syn)
+# Loading lpm.lpm_components
+# Loading lpm.lpm_add_sub(lpm_syn)
+# Loading lpm.lpm_add_sub_unsigned(lpm_syn)
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Result
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_OPCode
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Funct
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_RS
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_RT
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_RD
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Shamt
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Imm
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_JmpAddr
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_IR_Q
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_ExtOp
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_RegWr
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_RegDst
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_ALUSrc
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_MemWr
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_MemRd
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_MemToReg
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Jump
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_PCSrc
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_A
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_B
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_BusB
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Rw
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_BusW
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_NextAddr
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Mem_Data
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_ImmExt
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_ImmExtShft
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Adder1
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_Adder2
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_O
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder
+add wave -position end  sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdderTmp
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000100 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000100 0
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000000 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000100 0
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000000 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000100 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_B 00000000000000000000000000000010 0
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000000 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000100 0
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000000 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000100 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_B 00000000000000000000000000000010 0
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000000 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_A 00000000000000000000000000000001 0
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000000 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_RegF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_PC_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Inst_Mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_ALU_P/Natavio_May_22_2022_bit_op
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 7  Instance: /natavio_may_22_2022_cpu/Natavio_May_22_2022_Branch_Add/LPM_ADD_SUB_component/L1/U
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000000100 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_A 00000000000000000000000000000001 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_B 00000000000000000000000000000010 0
+run
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000001000 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_A 00000000000000000000000000000011 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_B 00000000000000000000000000000011 0
+run
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000001100 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_A 00000000000000000000000000000110 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_B 00000000000000000000000000000100 0
+run
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_CurrAdder 00000000000000000000000000010000 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_A 00000000000000000000000000001010 0
+force -freeze sim:/natavio_may_22_2022_cpu/Natavio_May_22_2022_B 00000000000000000000000000000101 0
+run
+quit -sim
+# End time: 23:22:44 on May 21,2022, Elapsed time: 1:51:00
+# Errors: 0, Warnings: 36
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 23:23:02 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+noforce sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 23:33:37 on May 21,2022, Elapsed time: 0:10:35
+# Errors: 0, Warnings: 2
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Load canceled
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_sign_ext
+# vsim -gui work.natavio_may_22_2022_sign_ext 
+# Start time: 23:34:48 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+add wave -position end  sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_16_bits
+add wave -position end  sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_ExtOp
+add wave -position end  sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_32_bits
+force -freeze sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_16_bits 0000000000000001 0
+force -freeze sim:/natavio_may_22_2022_sign_ext/Natavio_May_22_2022_ExtOp 0 0
+run
+quit -sim
+# End time: 23:37:37 on May 21,2022, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 2
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 23:40:05 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 23:44:48 on May 21,2022, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 3
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 23:46:47 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 23:52:18 on May 21,2022, Elapsed time: 0:05:31
+# Errors: 0, Warnings: 9
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 23:52:43 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 23:57:24 on May 21,2022, Elapsed time: 0:04:41
+# Errors: 0, Warnings: 2
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 23:58:02 on May 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_OpSel
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 00:04:10 on May 22,2022, Elapsed time: 0:06:08
+# Errors: 0, Warnings: 2
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd failed with 1 errors.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 00:06:20 on May 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 00:10:52 on May 22,2022, Elapsed time: 0:04:32
+# Errors: 0, Warnings: 3
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd failed with 2 errors.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 00:12:07 on May 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/temp
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+# End time: 00:13:53 on May 22,2022, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 4
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 00:14:13 on May 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/temp
+add wave -position end  sim:/natavio_may_22_2022_alu/temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 00:16:02 on May 22,2022, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 2
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd failed with 1 errors.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd failed with 1 errors.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 00:18:57 on May 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/temp
+add wave -position end  sim:/natavio_may_22_2022_alu/temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/temp3
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 00:21:09 on May 22,2022, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 4
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 00:22:01 on May 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/temp
+add wave -position end  sim:/natavio_may_22_2022_alu/temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+quit -sim
+# End time: 00:24:54 on May 22,2022, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 2
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd failed with 3 errors.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 1 failed with 3 errors.
+# Compile of Natavio_May_22_2022_5_bits_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_32_bit_2_1_Mux.vhd was successful.
+# Compile of Natavio_May_22_2022_Adder.vhd was successful.
+# Compile of Natavio_May_22_2022_addsub_ZNO.vhd was successful.
+# Compile of Natavio_May_22_2022_Data_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_Instruction_Memory.vhd was successful.
+# Compile of Natavio_May_22_2022_IR.vhd was successful.
+# Compile of Natavio_May_22_2022_Logical_Bitwise_Op.vhd was successful.
+# Compile of Natavio_May_22_2022_PC.vhd was successful.
+# Compile of Natavio_May_22_2022_RF.vhd was successful.
+# Compile of Natavio_May_22_2022_Sign_Ext.vhd was successful.
+# Compile of Natavio_May_22_2022_ALU.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Controller.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU_Components.vhd was successful.
+# Compile of Natavio_May_22_2022_CPU.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -gui work.natavio_may_22_2022_alu
+# vsim -gui work.natavio_may_22_2022_alu 
+# Start time: 00:28:16 on May 22,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.natavio_may_22_2022_alu(arch)
+# Loading ieee.numeric_std(body)
+# Loading work.natavio_may_22_2022_sign_ext(arch)
+# Loading work.natavio_may_22_2022_addsub_zno(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.natavio_may_22_2022_logical_bitwise_op(arch)
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_upper_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_lower_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Overflow
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Zero
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Negative
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_res
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_imm_o
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ext1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_O2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Z2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_N2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Cout2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp0
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp1
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp2
+add wave -position end  sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_temp3
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_ALUCtrl 0001 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand1 00000000000000000000000000000000 0
+force -freeze sim:/natavio_may_22_2022_alu/Natavio_May_22_2022_Operand2 00000000000000000000000000000001 0
+run
+# End time: 01:46:45 on May 22,2022, Elapsed time: 1:18:29
+# Errors: 0, Warnings: 3

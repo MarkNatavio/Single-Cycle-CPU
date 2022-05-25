@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY Natavio_May_22_2022_IR IS
+	PORT (Natavio_May_22_2022_Instruction	: IN std_logic_vector (31 DOWNTO 0);
+			Natavio_May_22_2022_OP				: OUT std_logic_vector (5 DOWNTO 0);
+			Natavio_May_22_2022_RS				: OUT std_logic_vector (4 DOWNTO 0);
+			Natavio_May_22_2022_RT				: OUT std_logic_vector (4 DOWNTO 0);
+			Natavio_May_22_2022_RD				: OUT std_logic_vector (4 DOWNTO 0);
+			Natavio_May_22_2022_Shamt			: OUT std_logic_vector (4 DOWNTO 0);
+			Natavio_May_22_2022_Funct			: OUT std_logic_vector (5 DOWNTO 0);
+			Natavio_May_22_2022_IMM16			: OUT std_logic_vector (15 DOWNTO 0);
+			Natavio_May_22_2022_J_Addr			: OUT std_logic_vector (31 DOWNTO 0));
+END Natavio_May_22_2022_IR;
+
